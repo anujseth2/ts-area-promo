@@ -1,0 +1,52 @@
+obj_id: orders_overview__config
+liveboard:
+  name: Orders Overview [Config]
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Price by Order Priority
+      tables:
+      - id: Orders Model [Config]
+        name: Orders Model [Config]
+        obj_id: orders_model__config
+      search_query: '[Order Priority] [Total Price]'
+      answer_columns:
+      - name: Order Priority
+      - name: Total Total Price
+      table:
+        table_columns:
+        - column_id: Order Priority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Total Price
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Order Priority
+        - Total Total Price
+        client_state: ''
+        client_state_v2: '{"tableVizPropVersion": "V1","columnProperties": [{"columnId": "Order Priority","columnProperty":
+          {}},{"columnId": "Total Total Price","columnProperty": {}}]}'
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Order Priority
+        - column_id: Total Total Price
+        axis_configs:
+        - x:
+          - Order Priority
+          y:
+          - Total Total Price
+        client_state: ''
+        client_state_v2: '{"version": "V4DOT2","chartProperties": {"gridLines": {},"responsiveLayoutPreference": "USER_PREFERRED_ON","chartSpecific":
+          {"dataFieldArea": "column"}},"columnProperties": [{"columnId": "Order Priority","columnProperty": {}},{"columnId":
+          "Total Total Price","columnProperty": {}}],"axisProperties": [{"id": "71a374cc-8255-4c8a-8e7f-dd038956d4d2","properties":
+          {"axisType": "Y","linkedColumns": ["Total Total Price"],"isOpposite": false}},{"id": "54ae62b7-078d-4d97-ab74-ae2a459881d8","properties":
+          {"axisType": "X","linkedColumns": ["Order Priority"]}}]}'
+      display_mode: TABLE_MODE
+    viz_guid: 95d5b8b3-a349-450d-bb46-bc028140f782
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      y: 0
+      height: 8
+      width: 12
