@@ -1,0 +1,29 @@
+obj_id: orders_model__live
+model:
+  name: Orders Model
+  model_tables:
+  - name: Orders [Config]
+    obj_id: orders__live
+  columns:
+  - name: Order Priority
+    column_id: Orders [Config]::Order Priority
+    properties:
+      column_type: ATTRIBUTE
+  - name: Order Status
+    column_id: Orders [Config]::Order Status
+    properties:
+      column_type: ATTRIBUTE
+  - name: Order Date
+    column_id: Orders [Config]::Order Date
+    properties:
+      column_type: ATTRIBUTE
+  - name: Total Price
+    column_id: Orders [Config]::Total Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+  properties:
+    is_bypass_rls: false
+    join_progressive: false
+    spotter_config:
+      is_spotter_enabled: false
