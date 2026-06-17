@@ -1,0 +1,6 @@
+guid: deadbeef
+obj_id: zz_bad__config
+table:
+  name: ZZ Bad
+  connection:
+    name: SF - config
