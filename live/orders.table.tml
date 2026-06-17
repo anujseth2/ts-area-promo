@@ -1,6 +1,6 @@
 obj_id: orders__live
 table:
-  name: Orders
+  name: Orders [Live]
   db: SNOWFLAKE_SAMPLE_DATA
   schema: TPCH_SF1
   db_table: ORDERS
